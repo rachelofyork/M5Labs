@@ -1,1 +1,2 @@
 This is file 1.
+I am editing file 1.
