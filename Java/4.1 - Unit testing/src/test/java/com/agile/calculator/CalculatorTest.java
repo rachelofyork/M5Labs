@@ -2,8 +2,6 @@ package com.agile.calculator;
 
 import static org.junit.Assert.*;
 
-import java.beans.Transient;
-
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -30,5 +28,15 @@ public class CalculatorTest {
 	@Test
 	public void divideTest(){
 		assertEquals(2, calculator.divide("6,3"));
+	}
+
+	@Test
+	public void multiplyTestNoComma(){
+		assertEquals(-9999, calculator.multiply("8 2"));
+	}
+
+	@Test
+	public void divideTestNoComma(){
+		assertEquals(250, calculator.divide("500 2"));
 	}
 }
